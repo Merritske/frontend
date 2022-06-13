@@ -14,35 +14,33 @@ CSS:
   font-family
   background-image
   border
+  
 dag2:
 HTML:
 layout: header - main - footer
-div: position
-
-  list: ordered-unordered
-  
-  table
-  
+>>div: position>>
+  list: ordered-unordered>>
+  table>>
   <!--open w3schools-->
   form: input type: text, number, date, submit, button, checkbox, radio
   button: submit
-  
+  >>
   icons
-  favicon
-  
-  cards
+  >>
+  favicon>>
+  cards>>
 CSS:
-     combinators vb: div p, div h1 of .container>p
+     combinators vb: div p, div h1 of .container>p>>
      font-family: google fonts
     word spacing, line spacing
          line-height
      text-transform
      text-decoration
      text-align
-    text-shadow
+    text-shadow>>
   margin
   margin: 0 auto to center div !width
-  padding
+  padding>>
   
   Navigationbar
   list-style-type
@@ -64,12 +62,13 @@ CSS:
 .dropdown:hover .dropdown-content {
   display: block;
 }
-  display: flex
-  position
-  z-index
-  overflow
-  opacity
-  box-shadow
+  display: flex>>
+  position>>
+  z-index>>
+  overflow>>
+  opacity>>
+  box-shadow>>
+  
 dag3:
     HTML:
          span
