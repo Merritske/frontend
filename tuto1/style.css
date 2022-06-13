@@ -5,3 +5,28 @@ h2{
 h3{
     color: blue;
 }
+.titel{
+    color: brown;
+    background-color: red;
+}
+#paragraaf1{
+    background-color:#42977a;
+    color: whitesmoke;
+    height: 200px;
+}
+#paragraaf2{
+    color: aquamarine;
+}
+.container{
+    width: 300px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    font-size:30px;
+    color: red;
+}
+.afbeelding{
+    width: 50px;
+}
