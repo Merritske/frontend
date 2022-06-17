@@ -1,3 +1,5 @@
+https://merritske.github.io/hetemalecss/
+
 dag1: iedereen aanwezig
 HTML: 
   h1 -> h6
