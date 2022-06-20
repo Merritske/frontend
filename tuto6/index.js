@@ -47,5 +47,19 @@ let result;
 result < 5 ? console.log("hiephiep") : console.log("hop hop");
 result = 6;
 result = result > 5 ? result > 10 ? "result is groter dan 10" : "result is kleiner dan 10": "result is kleiner dan 5";
-console.log(result)
+result = 10
+if(result== 10 || result == 5){
+    console.log("result is kleiner dan 5 en groter dan 10");
+}else{
+    console.log(result)
+}
+
+//oefening
+let leeftijd = 12;
+if(leeftijd < 16){
+    console.log("je mag geen alcohol drinken")
+}else{
+    console.log("je mag alcohol drinken")
+}
+
 
