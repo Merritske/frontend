@@ -123,3 +123,11 @@ students.map((student) => {
 console.log(`student ${student.naam} is ${student.leeftijd} jaar.`)
 })
 
+students.map((student)=>{
+    document.querySelector("#tabel>tbody").innerHTML += `<tr>
+    <td>${student.naam}</td>
+    <td>${student.leeftijd}</td>
+    <td>${student.adres.woonplaats}</td>
+    </tr>`
+})
+
