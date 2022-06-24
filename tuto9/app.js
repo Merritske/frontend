@@ -43,11 +43,48 @@ let verhaal = document.getElementById("verhaal")
 let boek = document.getElementById("boek")
 let btnLijst = document.getElementById("btnLijst")
 
+let boeklijst = []
+
 btnLijst.addEventListener('click', function(){
+let obj= {
+    titel: titel.value,
+    schrijver: schrijver.value,
+    verhaal: verhaal.value
+}
+boeklijst.push(obj)
+    console.log(boeklijst)
+
+    localStorage.setItem("boek", JSON.stringify(boeklijst))
+
   boek.innerHTML += `<tr>
   <td>${titel.value}</td>
   <td>${schrijver.value}</td>
   <td>${verhaal.value}</td>
-  <td> <i class="fa-solid fa-trash-can"></i> </td>
+  <td> <i class="fa-solid fa-trash-can" onclick="removeRij(this)" ></i> </td>
   </tr>`
+  titel.value = "";
+  schrijver.value = "";
+  verhaal.value = "";
+
+})
+
+function removeRij(e){
+    console.log(e.parentElement.parentElement)
+e.parentElement.parentElement.remove()
+
+}
+
+window.addEventListener("DOMContentLoaded", function(){
+    let storageBoek = JSON.parse(localStorage.getItem("boek"))
+    console.log(storageBoek[0].titel)
+    storageBoek.map((boekje)=>{
+        console.log(boekje)
+           boek.innerHTML += `<tr>
+  <td>${boekje.titel}</td>
+  <td>${boekje.schrijver}</td>
+  <td>${boekje.verhaal}</td>
+  <td> <i class="fa-solid fa-trash-can" onclick="removeRij(this)" ></i> </td>
+  </tr>`
+    })
+ 
 })
