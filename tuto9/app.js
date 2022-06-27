@@ -30,9 +30,11 @@ function tonen(){
     zichtbaar = !zichtbaar
     console.log(zichtbaar)
     if(zichtbaar == true){
-        tekst.style.visibility = "visible"
+        tekst.style.display = "block"
+      //  tekst.style.visibility = "visible"
     }else{
-        tekst.style.visibility = "hidden"
+        tekst.style.display = "none"
+       // tekst.style.visibility = "hidden"
     }
 }
 
@@ -69,9 +71,16 @@ boeklijst.push(obj)
 })
 
 function removeRij(e){
+    console.log(e.parentElement.parentElement.firstChild)
+    for(let x = 0; x< boeklijst.length; x++){
+        if(boeklijst[x].titel == e.parentElement.parentElement.firstChild.nextElementSibling.innerText){
+            boeklijst.splice(x,1)
+        }
+        e.parentElement.parentElement.remove()
+    }
     console.log(e.parentElement.parentElement)
-e.parentElement.parentElement.remove()
 
+localStorage.setItem("boek", JSON.stringify(boeklijst))
 }
 
 window.addEventListener("DOMContentLoaded", function(){
