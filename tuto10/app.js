@@ -6,7 +6,7 @@ let imgKeuze = document.querySelector(".keuze")
 let blad, steen, schaar
 blad = `<img src="https://i.pinimg.com/564x/e9/7a/c8/e97ac845390ea0edbee679dd68344441.jpg" style="width:100px; height:100px; object-fit:cover; border-radius:50%" alt="blad">`
 steen = `<img src="https://www.urnwinkel.nl/media/catalog/product/cache/752bc741c08ae7bd3b39c6561da3b139/h/a/handgemaakte_crematie_as_urn_hand_made_cremation_funeral_ash_handgefertigt_urne_funeraire_fait_a_la_main_hecho_a_mano_urna_funeraria_handgjorda_301091.jpg" style="width:100px; height:100px; object-fit:cover; border-radius:50%" alt="steen">`
-schaar = `<img src="https://www.delinkshandigenwinkel.nl/wp-content/uploads/2021/02/westcott-linkshandig-schaartje-1.jpg" style="width:100px; height:100px; object-fit:cover; border-radius:50%" alt="schaar">`
+schaar = `<img src="https://www.buromas.be/autoimg/321455/1024x768/ffffff/20015.jpg" style="width:100px; height:100px; object-fit:cover; border-radius:50%" alt="schaar">`
 let opties = [blad, steen, schaar]
 let puntenU = 0;
 let winU = document.getElementById("winU")
